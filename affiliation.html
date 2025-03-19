@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        FREE ZONE AFFILIATE
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                FREE ZONE AFFILIATE
+            </h1>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="bg-white p-6 rounded shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-4">
+                Generate Your Affiliate Link
+            </h2>
+            <form class="space-y-4" id="affiliateForm">
+                <div>
+                    <label class="block text-gray-700" for="username">
+       Username
+      </label>
+                    <input class="w-full p-2 border border-gray-300 rounded" id="username" placeholder="Enter your username" type="text" />
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded" onclick="generateLink()" type="button">
+      Generate Link
+     </button>
+            </form>
+            <div class="mt-4 hidden" id="result">
+                <p class="text-gray-700">
+                    Your affiliate link:
+                </p>
+                <p class="text-blue-600 font-bold" id="affiliateLink">
+                </p>
+            </div>
+        </section>
+        <section class="bg-white p-6 rounded shadow-md">
+            <h2 class="text-xl font-bold mb-4">
+                How It Works
+            </h2>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <img alt="Step 1: Sign up for the affiliate program" class="w-16 h-16 mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/q_J0oPBdxNFfg0gf2p0SyslbJ7QAuU8ARqiP5NiSFMg.jpg" width="100" />
+                    <p>
+                        Sign up for the affiliate program and get your unique referral link.
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <img alt="Step 2: Share your link" class="w-16 h-16 mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/8ag9WNB6ZRVuJbxOqURJ-eaHDn0Gg0iX1dNvN-hzO9s.jpg" width="100" />
+                    <p>
+                        Share your link with friends, family, and followers.
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <img alt="Step 3: Earn commissions" class="w-16 h-16 mr-4" height="100" src="https://storage.googleapis.com/a1aa/image/EM7QiTPlRjQu3JAEcxsucNmcq32lWeVDkHNW984SAuA.jpg" width="100" />
+                    <p>
+                        Earn commissions for every subscriptions made through your link.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <div class="container mx-auto text-center">
+            <p>
+                © 2025 Free Zone Affiliate. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        function generateLink() {
+            const username = document.getElementById('username').value;
+            if (username) {
+                const link = `https://www.affiliateprogram.com/ref/${username}`;
+                document.getElementById('affiliateLink').textContent = link;
+                document.getElementById('result').classList.remove('hidden');
+            } else {
+                alert('Please enter a username');
+            }
+        }
+    </script>
+</body>
+
+</html>
