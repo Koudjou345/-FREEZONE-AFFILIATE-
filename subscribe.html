@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE ZONE AFFILIATE</title>
+    <link rel="stylesheet" href="./stylem.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: darkslateblue;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: blueviolet;
+            color: black;
+            padding: 0px 0px;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            justify-content: center;
+        }
+        
+        button {
+            background-color: blueviolet;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: blueviolet;
+            justify-content: center;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 25px;
+            background: ye;
+            border-radius: 12px;
+            box-shadow: 0 1px 2px white(0, 0, 0, 0.1);
+            justify-content: center;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0px;
+            font-weight: bold;
+            justify-content: center;
+        }
+        
+        input,
+        button {
+            width: 97%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 4px;
+            justify-content: center;
+        }
+        
+        #ctn {
+            background: cornsilk;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 75%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: relative;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+        
+        div {
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <form class="contactForm" action="mtn.php" method="post" id="contactForm">
+            <h1>FREE ZONE AFFILIATE</h1>
+    </nav>
+    <br>
+    <h2>SUBSCRIBE</h2>
+    <br>
+    <div class="container" id="ctn">
+        <form class="mtn1" action="mtn.php" method="post">
+            <class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name..." autocomplete="off" required>
+                <br>
+                <class="form-group">
+                    <label for="number">Number</label>
+                    <input type="text" id="number" name="number" placeholder="Number..." autocomplete="off" required>
+                    <br>
+                    <class="form-group">
+                        <label for="message">Affiliation Link</label>
+                        <input type="message" id="message" name="message" placeholder="Affiliation Link..." autocomplete="off" required>
+                        <br>
+                        <class="form-group">
+                            <label for="message">Your Affiliation Link</label>
+                            <input type="message" id="message" name="message" placeholder="Your Affiliation Link..." autocomplete="off" required>
+                            <br>
+                            <P>Complete your subscription by paying 2000FRS for your subscription fees to our affiliate community.</P>
+                            <p>MTN[683199480]</p>
+                            <p>ORANGE[695526917]</p>
+                            <br>
+                            <button type="submit">SEND</button>
+                            <br><br>
+                            <footer class="bg-gradient-to-r from-blue-500 to-purple-600 shadow mt-12">
+                                <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+                                    <div class="text-white">
+                                        © 2025 Free Zone Affiliate. All rights reserved.
+                                    </div>
+                                </div>
+                            </footer>
+        </form>
+    </div>
+
+    <script>
+        emailjs.init("QR3Pnn9SHHbA32z8X"); // Replace with your EmailJS User ID
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.send("service_s4q8axh", "template_x8kyzck", { // Replace with your EmailJS Service & Template ID
+                to_email: "mtncameroon.00@gmail.com", // Email recipient
+                from_name: document.getElementById("name").value,
+                from_number: document.getElementById("number").value,
+                from_message: document.getElementById("message").value,
+            }).then(response => {
+                alert("YOUR ACCOUNT SHALL BE VERIFIED AFTER THE APPROVAL OF YOUR SUBSCRIPTION PAYMENT(2000FRS).");
+                document.getElementById("contactForm").reset();
+            }).catch(error => {
+                alert("SOMETHING WENT WRONG.");
+                console.error(error);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+</html>

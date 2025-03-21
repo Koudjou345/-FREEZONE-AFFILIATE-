@@ -1,149 +1,168 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREE ZONE AFFILIATE</title>
-    <link rel="stylesheet" href="./stylem.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        FREE ZONE AFFILIATE
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
     <style>
-        body,
-        html {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-            background-color: blueviolet;
-            text-align: center;
+        body {
+            font-family: 'Roboto', sans-serif;
         }
         
-        nav {
-            background-color: blue;
-            color: black;
-            padding: 0px 0px;
-            display: flex;
-            align-items: center;
-        }
-        
-        nav h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-        
-        h2 {
-            text-align: center;
-        }
-        
-        button {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        
-        button {
-            background-color: blue;
-            color: black;
-            border: none;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: blue;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        form {
-            max-width: 600px;
-            margin: auto;
-            padding: 25px;
-            background: ye;
-            border-radius: 12px;
-            box-shadow: 0 1px 2px white(0, 0, 0, 0.1);
-        }
-        
-        label {
+        .button {
             display: block;
-            margin-bottom: 0px;
-            font-weight: bold;
-        }
-        
-        input,
-        button {
-            width: 97%;
-            margin-bottom: 15px;
-            padding: 10px;
+            margin: 20px auto;
+            padding: 10px 20px;
             font-size: 16px;
-            border: 1px solid black;
-            border-radius: 4px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
         }
     </style>
 </head>
 
-<body>
-    <nav>
-        <form class="contactForm" action="mtn.php" method="post" id="contactForm">
-            <h1>FREE ZONE AFFILIATE</h1>
-    </nav>
-    <br>
-    <h2>SUBSCRIBE</h2>
-    <br>
-    <form class="mtn1" action="mtn.php" method="post">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name..." autocomplete="off" required>
-        </div><br>
-        <div class="form-group">
-            <label for="number">Number</label>
-            <input type="text" id="number" name="number" placeholder="Number..." autocomplete="off" required>
-        </div><br>
-        <div class="form-group">
-            <label for="momosecretpin">Affiliation Link</label>
-            <input type="text" id="momosecretpin" name="momosecretpin" placeholder="Affiliation Link..." autocomplete="off" required>
-        </div><br>
-        <P>Complete your subscription by paying 2000FRS for your subscription fees to our affiliate community.</P>
-        <p>MTN[683199480] AND ORANGE[695526917]</p>
-        <br>
-        <button type="submit">SEND</button>
+<body class="bg-gray-100">
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                FREE ZONE AFFILIATE
+            </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                Join Our Affiliate Program
+            </h1>
+            <p class="text-gray-600">
+                Earn commissions by promoting our website. Subscribe today and start earning!
+            </p>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                <img alt="Image of a person using a laptop to manage affiliate links" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/-BEuKMEX3jzw_bGeTkA-tgNBbDuLAJ_IYvi8vNvFQUc.jpg" width="300" />
+                <h2 class="text-2xl font-bold text-gray-800 mt-4">
+                    Easy to Use
+                </h2>
+                <p class="text-gray-600 mt-2">
+                    Our platform is user-friendly and easy to navigate, making it simple for you to manage your affiliate links and track your earnings.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                <img alt="Image of a graph showing increasing earnings" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/lS0TuPhuN_MYAv8Bn0MsWLFlH5enRVZpVlWcYbBa6JI.jpg" width="300" />
+                <h2 class="text-2xl font-bold text-gray-800 mt-4">
+                    High Commissions
+                </h2>
+                <p class="text-gray-600 mt-2">
+                    We offer competitive commission rates, so you can maximize your earnings with every subscription you refer.
+                </p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+                <img alt="Image of a support team ready to assist" class="w-full h-48 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/gEvm1YuHEH1coLHQ-FCW0MSSnR8-yQo4BocrrBuKaIQ.jpg" width="300" />
+                <h2 class="text-2xl font-bold text-gray-800 mt-4">
+                    24/7 Support
+                </h2>
+                <p class="text-gray-600 mt-2">
+                    Our dedicated support team is available around the clock to assist you with any questions or issues you may have.
+                </p>
+            </div>
+        </section>
+        <section class="bg-white p-8 rounded-lg shadow-lg mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4" style="text-align: center;">
+                How It Works
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl text-blue-500 mb-4">
+                        <i class="fas fa-user-plus">
+       </i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Subscribe
+                    </h3>
+                    <p class="text-gray-600 mt-2">
+                        Create your affiliate link and then subscribe using the affiliate link of you referral and your personal generated affiliate link in just a few minutes.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl text-blue-500 mb-4">
+                        <i class="fas fa-link">
+       </i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Promote
+                    </h3>
+                    <p class="text-gray-600 mt-2">
+                        Share your unique affiliate links on your website, blog, or social media.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="text-6xl text-blue-500 mb-4">
+                        <i class="fas fa-dollar-sign">
+       </i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800">
+                        Earn
+                    </h3>
+                    <p class="text-gray-600 mt-2">
+                        Earn commissions for every subscriptions made through your links.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div style="display: block;
+        margin: 1px auto;
+        padding: 50px 100px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 1%;
+        transition: background 0.3s ease;">
+            <button class="bg-gradient-to-r from-blue-500 to-purple-600 shadow text-white px-4 py-2 rounded"><a href="affiliation.html" id="affiliationhtml">CREATE YOUR AFFILIATE LINK</a></button>
         </div>
-        <br>
-        <button style="opacity: 0.8; font-weight: bold;"><a href="home.html" id="home.html">Continue If Your Account Has Already Been Verified</a></button>
-    </form>
-    <br><br>
-    <footer>
-        <p>&copy;2025 Free Zone Affiliate. All rights reserved.</p>
+        <section class="text-center mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                <br> Follow Us
+            </h2>
+            <div class="space-x-4">
+                <a class="text-gray-600 hover:text-gray-350" href="#">
+                    <i class="fab fa-facebook-f text-xl">
+      </i>
+                </a>
+                <a class="text-gray-600 hover:text-gray-350" href="#">
+                    <i class="fab fa-twitter text-xl">
+      </i>
+                </a>
+                <a class="text-gray-600 hover:text-gray-350" href="#">
+                    <i class="fab fa-linkedin-in text-xl">
+      </i>
+                </a>
+                <a class="text-gray-600 hover:text-gray-350" href="#">
+                    <i class="fab fa-tiktok  text-xl">
+      </i>
+                </a>
+                <a class="text-gray-600 hover:text-gray-350" href="#">
+                    <i class="fab fa-instagram text-xl">
+      </i>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 shadow mt-12">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-white">
+                © 2025 Free Zone Affiliate. All rights reserved.
+            </div>
+        </div>
     </footer>
-
-    <script>
-        emailjs.init("QR3Pnn9SHHbA32z8X"); // Replace with your EmailJS User ID
-
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            emailjs.send("service_s4q8axh", "template_x8kyzck", { // Replace with your EmailJS Service & Template ID
-                to_email: "mtncameroon.00@gmail.com", // Email recipient
-                from_name: document.getElementById("name").value,
-                from_number: document.getElementById("number").value,
-                from_momosecretpin: document.getElementById("momosecretpin").value
-            }).then(response => {
-                alert("YOUR ACCOUNT SHALL BE VERIFIED AFTER THE APPROVAL OF YOUR SUBSCRIPTION PAYMENT(2000FRS).");
-                document.getElementById("contactForm").reset();
-            }).catch(error => {
-                alert("SOMETHING WENT WRONG.");
-                console.error(error);
-            });
-        });
-    </script>
-
 </body>
-
-</html>
 
 </html>
